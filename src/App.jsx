@@ -1,22 +1,21 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-import './index.js'
+/* eslint-disable no-constant-condition */
+import Student from './Student.jsx'
+import Greeting from './UserGreeting.jsx'
+
 
 function App() {
   
 
   return (
-    <div>
-      <form className='my-form' action="">
-      <h1>Hello World</h1>
-    <input type="text" className='text-input' placeholder='username'/> <br />
-    <input type="password" className='password-input' placeholder='password'/> <br />
-    {/* <input type="submit" placeholder='password'/> */}
-    <button type='submit'>Submit</button>
-      </form>
-    </div>
+    <>
+    
+    <Student name="MANI" age={30} isStudent={true ? "Yes" : "No" }/>
+    <Student name="Joe" age={20} isStudent={false ? "Yes" : "No" }/>
+    <Student name="Emma" age={15} isStudent={true ? "Yes" : "No" }/>
+    <Student name="Joshua" age={8} isStudent={false ? "Yes" : "No" }/>
+    <Student />
+    <Greeting isLoggedIn={true} username="Mani"/>
+    </>
   )
 }
 
